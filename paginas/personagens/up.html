@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXAR - Melhores Animações</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="../../img/home/logo1.png">
+</head>
+
+<body>
+    <div class="all">
+        <header>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #fcfaec !important">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">
+                        <img src="../../img/home/logo2.png" alt="Logo" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../paginas/personagens/monstrossa.html">FILMES E
+                                    PERSONAGENS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../paginas/cenas/index3.html">CENAS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h2>Up: Altas Aventuras</h2>
+            <a href="../cenas/up3.html" style="text-decoration: none;">
+            <div class="card mb-3" style="max-width: 1200px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../../img/filmes/upaltasaventuras.jpg" class="img-fluid" id="imgm" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div class="descricao">
+                                <h4 class="card-title"><strong
+                                        style="color: #84A9C0; font-weight: 100;">Descrição</strong>
+                                </h4>
+                                <p class="card-text">Carl Fredricksen, um viúvo, realiza seu sonho de aventura ao voar
+                                    para a América do Sul amarrando balões em sua casa, mas acidentalmente leva consigo
+                                    o jovem escoteiro Russell. Juntos, enfrentam desafios, fazem novos amigos e
+                                    descobrem lições sobre amizade e a importância de perseguir os sonhos.</p>
+                            </div>
+                            <div class="plataformaelancamento">
+                                <div class="plataforma col-sm">
+                                    <h4 class="card-title"><strong
+                                            style="color: #84A9C0; font-weight: 80;">Plataforma</strong>
+                                    </h4>
+                                    <p class="card-text">Disney.</p>
+                                </div>
+                                <div class="lancamento col-sm">
+                                    <h4 class="card-title"><strong
+                                            style="color: #84A9C0; font-weight: 80;">Lançamento</strong>
+                                    </h4>
+                                    <p class="card-text">4 de setembro de 2009 (Brasil)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+            <h2>Personagens</h2>
+            <div id="charactersContainer" class="row row-cols-1 row-cols-md-4 g-4 p-4">
+            </div>
+        </main>
+    </div>
+    <script>
+        const personagens = [
+            {
+                "id": 1,
+                "nome": "Carl",
+                "imagem": "../../img/personagens/up/carl.jpg",
+                "descricao": "Um viúvo idoso que decide realizar seu sonho de aventura amarrando balões em sua casa e voando para a América do Sul."
+            },
+            {
+                "id": 2,
+                "nome": "Russel",
+                "imagem": "../../img/personagens/up/russel.png",
+                "descricao": "Um jovem escoteiro que acidentalmente se torna passageiro na casa de balões de Carl."
+            },
+            {
+                "id": 3,
+                "nome": "Charles Muntz",
+                "imagem": "../../img/personagens/up/charles.jpg",
+                "descricao": "É um famoso explorador e ex-ídolo de Carl. Desenvolve uma obsessão pelo raro pássaro chamado 'Kevin'."
+            },
+            {
+                "id": 4,
+                "nome": "Jovem Ellie",
+                "imagem": "../../img/personagens/up/ellie.png",
+                "descricao": "Jovem Ellie é a falecida esposa de Carl, cujos sonhos de aventura inspiram a jornada de Carl, tendo um papel significativo."
+            },
+            {
+                "id": 5,
+                "nome": "Dug",
+                "imagem": "../../img/personagens/up/dug.jpg",
+                "descricao": "Usa uma coleira especial que lhe permite falar."
+            },
+            {
+                "id": 6,
+                "nome": "George",
+                "imagem": "../../img/personagens/up/george.png",
+                "descricao": "Enfermeiro George é um personagem secundário."
+            },
+            {
+                "id": 7,
+                "nome": "Strauch",
+                "imagem": "../../img/personagens/up/strauch.png",
+                "descricao": "Mestre do acampamento de escoteiros."
+            },
+            {
+                "id": 8,
+                "nome": "Tom",
+                "imagem": "../../img/personagens/up/tom.jpg",
+                "descricao": "Humilde, é o mestre de obras com o sonho de construir a catedral."
+            }
+        ]
+
+        const listaPersonagens = document.getElementById('charactersContainer');
+
+        personagens.forEach(personagem => {
+            const cardCol = document.createElement('div');
+            cardCol.className = 'col';
+
+            const card = document.createElement('div');
+            card.className = 'card h-100 personagem-card';
+            card.style.border = '1px solid #84A9C0';
+            card.style.borderRadius = '3px';
+
+            const img = document.createElement('img');
+            img.src = personagem.imagem;
+            img.className = 'card-img-top personagem-img';
+            img.alt = '...';
+
+            const cardBody = document.createElement('div');
+            cardBody.className = 'card-body';
+
+            const title = document.createElement('h5');
+            title.className = 'card-title personagem-nome';
+            title.textContent = personagem.nome;
+
+            const p = document.createElement('p');
+            p.className = 'card-text personagem-descricao';
+            p.textContent = personagem.descricao;
+
+            cardBody.appendChild(title);
+            cardBody.appendChild(p);
+
+            card.appendChild(img);
+            card.appendChild(cardBody);
+
+            card.addEventListener('click', () => {
+                const modalTitle = document.querySelector('.modal-title');
+                const modalBody = document.querySelector('.modal-body');
+
+                modalTitle.textContent = personagem.nome;
+                modalBody.querySelector('img').src = personagem.imagem;
+                modalBody.querySelector('.personagem-descricao-modal').textContent = personagem.descricao;
+
+                new bootstrap.Modal(document.getElementById('modalContainer')).show();
+            });
+            card.style.cursor = 'pointer';
+
+            cardCol.appendChild(card);
+            listaPersonagens.appendChild(cardCol);
+        });
+    </script>
+
+</body>
+<div class="modal" id="modalContainer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color:#fcfaec;">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" class="img-fluid" alt="..." style=" margin-bottom: 10px; border-radius: 10px; ">
+                <p class="card-text personagem-descricao-modal"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

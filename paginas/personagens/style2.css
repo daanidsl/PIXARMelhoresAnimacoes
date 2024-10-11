@@ -1,0 +1,155 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    background-color: #fcfaec !important; 
+}
+
+.all{
+    margin: 10px;
+}
+
+main {
+    margin: 20px; /* Adicione um espaçamento externo de 20px */
+    text-align: justify;
+    padding-left: 10px; /* Adicione um espaçamento interno à esquerda */
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0; /* Remova as margens padrão do h1 */
+}
+
+h2{
+    color: #84A9C0 !important;
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 2px solid #84A9C0;
+}
+
+h5{
+    color: #84A9C0 !important;
+    text-align: center; 
+}
+
+
+.card-body{
+    background-color: #f9f9f3;
+}
+
+.plataformaelancamento{
+    padding-top: 26px;
+    display: flex;
+    gap: 100px;
+}
+
+/* Breakpoint: 600px ou menor */
+@media screen and (max-width: 600px) {
+    header,
+    footer {
+        padding: 0 auto;
+    }
+
+    h1 {
+        font-size: 8px;
+    }
+
+    .conteudo {
+        margin: 12px;
+        padding: 4px;
+    }
+
+    .descricao{
+        margin: 10px;
+    }
+
+    .plataformaelancamento{
+        padding-top: 26px;
+        display: flex;
+        gap: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    footer{
+        padding-top: 1px;
+    }
+
+    #imgm{
+        max-width: 100%; 
+        height: auto; 
+    }
+}
+
+/* Breakpoint: Entre 601px e 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    header,
+    footer {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .conteudo {
+        margin: 20px;
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    .descricao{
+        margin: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .plataformaelancamento{
+        padding-top: 26px;
+        display: flex;
+        gap: 10px;
+    }
+
+    #imgm {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* Breakpoint: Entre 1025px e 1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    header,
+    footer {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .col {
+        flex-basis: 50%; /* Dividir em duas colunas */
+    }
+
+    .conteudo {
+        margin: 8px;
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #imgm {
+        width: auto;
+        height: 100%;
+    } 
+    .plataformaelancamento{
+        padding-top: 1px;
+        display: flex;
+    }
+}
